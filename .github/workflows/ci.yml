@@ -49,7 +49,7 @@ jobs:
       # for poetry you need an ad-hoc solution
       # see https://github.com/python-poetry/poetry/issues/2629 for the problem with win + python3.6
       - name: Set up Poetry cache for Python dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         if: matrix.os != 'windows-latest'
         with:
           path: .venv
